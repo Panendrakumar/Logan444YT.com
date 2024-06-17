@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #f4f4f4;
 }
 
 header {
     background-color: #000000;
     color: #ffffff;
-    padding: 1px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -28,15 +28,74 @@ nav ul li a {
 }
 
 main {
-    padding: 40px;
+    padding: 1px;
 }
 
 footer {
     background-color: #000000;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
-    padding: 0px 0;
+    padding: 1px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.youtube-logo {
+    margin: 1px 0;
+    text-align: left;
+}
+
+/* Change image size */
+.youtube-logo img {
+    width: 300px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.instagram-logo {
+    margin: 1px 0;
+    text-align: left;
+}
+
+/* Change image size */
+.instagram-logo img {
+    width: 150px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+.youtube-link {
+    margin-top: 10px;
+}
+
+.youtube-link a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.youtube-link a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+
+.instagram-link {
+    margin-top: 10px;
+}
+
+.instagram-link a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.instagram-link a:hover {
+    color: red;
+    text-decoration: underline;
 }
