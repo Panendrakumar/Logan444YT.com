@@ -1,15 +1,27 @@
-body {
+body, html {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%;
     background-color: #f4f4f4;
 }
 
 header {
     background-color: #000000;
-    color: #ffffff;
-    padding: 10px 0;
+    color: #fff;
+    padding: 1px 0;
     text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    animation: glow 1.0s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 7px #fff;
+    }
+    to {
+        text-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 15px #ff0000;
+    }
 }
 
 nav ul {
@@ -23,79 +35,65 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
 }
 
 main {
-    padding: 5px;
+    padding: 20px;
+    min-height: calc(100vh - 80px); /* Adjust to ensure the footer stays at the bottom */
 }
 
 footer {
     background-color: #000000;
     color: #fff;
     text-align: center;
-    padding: 1px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 5px 0;
+    margin-top: auto;
 }
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Align items horizontally centered */
+    align-items: center; /* Align items vertically centered */
+    margin: 50px 0;
+}
+
 
 .youtube-logo {
-    margin: 2px 0;
-    text-align: left;
+    text-align: center;
+    margin: 0 0px;
 }
 
-/* Change image size */
 .youtube-logo img {
-    width: 240px; /* Set the desired width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 78%; /* Ensure images are responsive */
+    height: auto;
 }
+
 
 
 .instagram-logo {
-    margin: 2px 0;
-    text-align: left;
+    text-align: center;
+    margin: 0 10px;
 }
 
-/* Change image size */
 .instagram-logo img {
-    width:200px; /* Set the desired width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
 }
 
-
-
-
-.youtube-link {
-    margin-top: 10px;
+.youtube-link, .instagram-link {
+    margin-top: 20px;
 }
 
-.youtube-link a {
+.youtube-link a, .instagram-link a {
     color: #000000;
     text-decoration: none;
     font-weight: bold;
 }
 
-.youtube-link a:hover {
+.youtube-link a:hover, .instagram-link a:hover {
     color: red;
     text-decoration: underline;
 }
 
-
-
-
-.instagram-link {
-    margin-top: 10px;
-}
-
-.instagram-link a {
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.instagram-link a:hover {
-    color: red;
-    text-decoration: underline;
-}
